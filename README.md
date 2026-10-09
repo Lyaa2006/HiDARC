@@ -35,21 +35,41 @@ path placeholders in those files before using them.
 
 ## Datasets
 
-Download the continual instruction-tuning datasets from Hugging Face:
+UCIT and MLLM-CL are two different benchmarks. UCIT was introduced by
+HiDe-LLaVA; its original Hugging Face repository is
+[`HaiyangGuo/UCIT`](https://huggingface.co/datasets/HaiyangGuo/UCIT).
+
+Download the original UCIT instructions and released files with:
 
 ```bash
-huggingface-cli download MLLM-CL/UCIT \
+huggingface-cli download HaiyangGuo/UCIT \
   --repo-type dataset \
   --local-dir /your_data_path/UCIT
+```
 
+The original UCIT repository does not mirror every image source. For a
+complete six-task UCIT tree, the `vantuan5644/UCIT` Hugging Face repository
+provides a restoration script:
+
+```bash
+mkdir -p /your_data_path/UCIT
+cd /your_data_path/UCIT
+hf download --repo-type dataset vantuan5644/UCIT restore.sh --local-dir .
+bash restore.sh vantuan5644/UCIT /your_data_path/UCIT
+```
+
+Download the separate MLLM-CL benchmark with:
+
+```bash
 huggingface-cli download MLLM-CL/MLLM-CL \
   --repo-type dataset \
   --local-dir /your_data_path/MLLM-CL
 ```
 
-The LLaVA and InternVL HiDARC experiments use the UCIT or MLLM-CL task
-protocols. The downloaded data must be accompanied by the corresponding local
-dataset JSON configuration files expected by the evaluation scripts.
+The LLaVA and InternVL HiDARC experiments use either the UCIT or the
+MLLM-CL task protocols. The downloaded data must be accompanied by the
+corresponding local dataset JSON configuration files expected by the
+evaluation scripts.
 
 ## How to run
 

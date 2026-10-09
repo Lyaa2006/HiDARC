@@ -1,0 +1,13 @@
+{
+  "protocol": "UCIT",
+  "task_count": 6,
+  "gpu_num": 2,
+  "rank": 96,
+  "expert_num": 6,
+  "epoch": 1,
+  "batch_size": 2,
+  "grad_acc": 16,
+  "lr": 5e-05,
+  "cur_task": 3,
+  "output_dir": "/tmp/hidarc_task4"
+}

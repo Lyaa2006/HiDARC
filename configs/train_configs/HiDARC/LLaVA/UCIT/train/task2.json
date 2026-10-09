@@ -1,0 +1,20 @@
+{
+  "gpu_num": 2,
+  "rank": 96,
+  "expert_num": 6,
+  "previous_model": "/home/lyaa/MCITlib_runs/checkpoints/UCIT/LLaVA/HiDESC_from_task1_ce_main_g4/Task1_llava_lora",
+  "output_dir": "/home/lyaa/MCITlib_runs/checkpoints/UCIT/LLaVA/HiDESC_from_task1_ce_main_g4/Task2_llava_lora",
+  "epoch": 1,
+  "batch_size": 2,
+  "grad_acc": 16,
+  "lr": 0.0002,
+  "cur_task": 1,
+  "description_max_tokens": 32,
+  "description_focus_weight": 0.05,
+  "description_energy_weight": 0.0005,
+  "description_energy_margin": 30,
+  "standard_ce_weight": 3,
+  "description_cache_model_source": "base",
+  "description_cache_dir": "/mnt/lyaa/MCITlib/checkpoints/UCIT/LLaVA/HiDESC_from_HiDeTask1_g4b8ga2/description_caches/task2_arxivqa",
+  "align_loss_weight": 0.005
+}

@@ -1,0 +1,11 @@
+{
+  "gpu_num": 1,
+  "stage": "HiDARC-InternVL-DCL-task4-role3-0.415",
+  "model_path": "/your_ckpts_path/HiDARC/MLLM-DCL/InternVL/Task4_internvl_hidarc",
+  "result_path": "/your_results_path/HiDARC/MLLM-DCL/InternVL",
+  "text_tower": "/your_model_path/clip-vit-large-patch14-336",
+  "num_task": 5,
+  "spectral_pca_path": "/your_path/analysis_outputs/internvl_hidarc_pca_3200_to_512.pt",
+  "spectral_route_channel_dim": 512,
+  "routing_config_path": "../collaboration.json"
+}

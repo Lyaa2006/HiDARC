@@ -1,0 +1,9 @@
+{
+  "gpu_num": 2,
+  "stage": "HiDARC-DCL-task3",
+  "model_path": "/your_ckpts_path/HiDARC/MLLM-DCL/LLaVA/Task3_llava_lora",
+  "result_path": "/your_results_path/HiDARC/MLLM-DCL/LLaVA",
+  "text_tower": "/your_model_path/clip-vit-large-patch14-336",
+  "num_task": 5,
+  "routing_config_path": "../collaboration.json"
+}

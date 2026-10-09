@@ -1,0 +1,9 @@
+{
+  "gpu_num": 2,
+  "stage": "HiDARC-UCIT-task5",
+  "model_path": "/your_ckpts_path/HiDARC/UCIT/LLaVA/Task5_llava_lora",
+  "result_path": "/your_results_path/HiDARC/UCIT/LLaVA",
+  "text_tower": "/your_model_path/clip-vit-large-patch14-336",
+  "num_task": 6,
+  "routing_config_path": "../collaboration.json"
+}

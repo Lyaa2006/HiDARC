@@ -1,0 +1,21 @@
+{
+  "protocol": "UCIT",
+  "task_count": 6,
+  "gpu_num": 2,
+  "rank": 96,
+  "expert_num": 6,
+  "epoch": 1,
+  "batch_size": 2,
+  "grad_acc": 16,
+  "lr": 0.0002,
+  "model_max_length": 2048,
+  "dataloader_num_workers": 4,
+  "description_max_tokens": 32,
+  "description_cache_model_source": "base",
+  "description_cache_format": "expanded_text_v1",
+  "description_focus_weight": 0.05,
+  "description_energy_weight": 0.0005,
+  "description_energy_margin": 30,
+  "standard_ce_weight": 3,
+  "align_loss_weight": 0.005
+}

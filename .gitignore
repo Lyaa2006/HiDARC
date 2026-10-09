@@ -1,0 +1,133 @@
+# --- Secrets (never commit) ---
+.env
+**/.env
+.env.*
+!.env.example
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+
+# --- Environments / packaging ---
+.venv/
+venv/
+env/
+ENV/
+conda/
+*.egg-info/
+build/
+dist/
+.pdm-build/
+
+# --- Training artifacts / logs ---
+wandb/
+mlruns/
+lightning_logs/
+logs/
+log/
+*.log
+*.out
+*.err
+
+# --- Datasets / outputs / checkpoints ---
+data/
+datasets/
+dataset/
+MLLM/
+cache/
+outputs/
+output/
+results/
+result/
+runs/
+checkpoints/
+checkpoint/
+ckpt/
+models/
+pretrained/
+publish_models/
+public_models/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# --- ML caches / compiled kernels ---
+.triton/
+**/triton_cache/
+
+# --- Evaluation exports / experiment reports ---
+/analysis_outputs/
+*_submission.tsv
+*MathVista*.xlsx
+docs/experiment*_description_drift/
+docs/experiment*_outputs*/
+docs/experiment*_prelim_ce_only/
+docs/experiment*_template_alignment*/
+docs/experiment*_l_focus_logic_smoke/
+docs/hierarchical_boundary_outputs*/
+docs/hierarchical_boundary_sweeps*/
+
+# --- Local research scratch space (new files stay local) ---
+/analysis/
+/artifacts/
+/remote_checkpoints/
+/summary/
+/tmp/
+/tmp_runtime_sync/
+
+# --- HiDARC generated probe/routing artifacts ---
+/configs/probe_configs/
+/configs/routing_configs/
+/new_experiments_1/
+/figures/
+/ablation/
+/configs/local/
+/configs/probe_configs/
+/configs/data_configs/CL-VISTA/
+/configs/data_configs/General_benchmark/
+
+# --- Nested git dirs (vendored repos) ---
+**/.git/
+
+# --- New top-level files are limited to the public repository layout ---
+/*
+!/.gitignore
+!/.env.example
+!/README.md
+!/InternVL/
+!/InternVL/**
+!/LLaVA/
+!/LLaVA/**
+!/configs/
+!/configs/**
+!/examples/
+!/examples/**
+
+# --- New method files: keep only HiDARC additions ---
+/InternVL/*/
+!/InternVL/HiDARC/
+!/InternVL/HiDARC/**
+/LLaVA/*/
+!/LLaVA/HiDARC/
+!/LLaVA/HiDARC/**
+/configs/train_configs/*/
+!/configs/train_configs/HiDARC/
+!/configs/train_configs/HiDARC/**
+/configs/routing_configs/
+/configs/model_configs/*_remote.json
+/configs/local/
+/configs/probe_configs/

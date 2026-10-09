@@ -47,16 +47,8 @@ huggingface-cli download HaiyangGuo/UCIT \
   --local-dir /your_data_path/UCIT
 ```
 
-The original UCIT repository does not mirror every image source. For a
-complete six-task UCIT tree, the `vantuan5644/UCIT` Hugging Face repository
-provides a restoration script:
-
-```bash
-mkdir -p /your_data_path/UCIT
-cd /your_data_path/UCIT
-hf download --repo-type dataset vantuan5644/UCIT restore.sh --local-dir .
-bash restore.sh vantuan5644/UCIT /your_data_path/UCIT
-```
+Please follow the instructions on the official Hugging Face dataset card to
+download and organize the complete image collection for all UCIT tasks.
 
 Download the separate MLLM-CL benchmark with:
 

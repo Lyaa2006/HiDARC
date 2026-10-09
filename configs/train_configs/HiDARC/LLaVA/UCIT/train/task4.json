@@ -2,8 +2,8 @@
   "gpu_num": 2,
   "rank": 96,
   "expert_num": 6,
-  "previous_model": "/home/lyaa/MCITlib_runs/checkpoints/UCIT/LLaVA/HiDESC_from_task1_ce_main_g4/Task3_llava_lora",
-  "output_dir": "/home/lyaa/MCITlib_runs/checkpoints/UCIT/LLaVA/HiDESC_from_task1_ce_main_g4/Task4_llava_lora",
+  "previous_model": "__EXTERNAL_ROOT__/runs/checkpoints/UCIT/LLaVA/HiDESC_from_task1_ce_main_g4/Task3_llava_lora",
+  "output_dir": "__EXTERNAL_ROOT__/runs/checkpoints/UCIT/LLaVA/HiDESC_from_task1_ce_main_g4/Task4_llava_lora",
   "epoch": 1,
   "batch_size": 2,
   "grad_acc": 16,
@@ -15,6 +15,6 @@
   "description_energy_margin": 30,
   "standard_ce_weight": 3,
   "description_cache_model_source": "base",
-  "description_cache_dir": "/mnt/lyaa/MCITlib/checkpoints/UCIT/LLaVA/HiDESC_from_HiDeTask1_g4b8ga2/description_caches/task4_iconqa",
+  "description_cache_dir": "__REPO_ROOT__/checkpoints/UCIT/LLaVA/HiDESC_from_HiDeTask1_g4b8ga2/description_caches/task4_iconqa",
   "align_loss_weight": 0.005
 }

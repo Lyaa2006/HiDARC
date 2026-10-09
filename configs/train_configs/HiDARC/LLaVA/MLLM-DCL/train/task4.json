@@ -9,6 +9,6 @@
   "grad_acc": 4,
   "lr": 0.0002,
   "cur_task": 3,
-  "output_dir": "/tmp/hidarc_task4",
-  "previous_model": "/tmp/hidarc_task3"
+  "output_dir": "__EXTERNAL_ROOT__/tmp/hidarc_task4",
+  "previous_model": "__EXTERNAL_ROOT__/tmp/hidarc_task3"
 }

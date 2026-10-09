@@ -9,5 +9,5 @@
   "grad_acc": 16,
   "lr": 5e-05,
   "cur_task": 4,
-  "output_dir": "/tmp/hidarc_task5"
+  "output_dir": "__EXTERNAL_ROOT__/tmp/hidarc_task5"
 }

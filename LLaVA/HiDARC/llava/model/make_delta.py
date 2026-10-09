@@ -1,6 +1,6 @@
 """
 Usage:
-python3 -m llava.model.make_delta --base ~/model_weights/llama-7b --target ~/model_weights/llava-7b --delta ~/model_weights/llava-7b-delta --hub-repo-id liuhaotian/llava-7b-delta
+python3 -m llava.model.make_delta --base __EXTERNAL_ROOT__/model_weights/llama-7b --target __EXTERNAL_ROOT__/model_weights/llava-7b --delta __EXTERNAL_ROOT__/model_weights/llava-7b-delta --hub-repo-id liuhaotian/llava-7b-delta
 """
 import argparse
 

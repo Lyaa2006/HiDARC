@@ -73,6 +73,28 @@ Before running a launcher, update the paths in your local configuration files:
 - `RUN_ROOT`: the directory for checkpoints, logs, and description caches;
 - `CUDA_VISIBLE_DEVICES`: the GPUs to use.
 
+### Anonymous path placeholders
+
+The tracked files on `main` use only two repository-wide path placeholders:
+
+- `__REPO_ROOT__`: the absolute path of this cloned repository;
+- `__EXTERNAL_ROOT__`: the root under which you keep models, datasets,
+  environments, caches, checkpoints, and temporary files.
+
+Replace these literal tokens in batch before running, for example:
+
+```bash
+find . -path './.git' -prune -o -type f -print0 \
+  | xargs -0 sed -i \
+      -e 's#__REPO_ROOT__#/srv/HiDARC#g' \
+      -e 's#__EXTERNAL_ROOT__#/srv/experiments#g'
+```
+
+If models and datasets are stored in unrelated roots, replace
+`__EXTERNAL_ROOT__` by configuration group instead of using one global
+replacement. The `/your_*` examples below are also placeholders and should be
+updated before execution.
+
 The HiDARC training settings and collaboration profiles are under
 `configs/train_configs/HiDARC/`. Replace any remaining `/your_*` placeholders
 in the selected task and evaluation JSON files with your local paths.

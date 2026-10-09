@@ -9,5 +9,5 @@
   "grad_acc": 8,
   "lr": 0.0001,
   "cur_task": 3,
-  "output_dir": "/tmp/hidarc_task4"
+  "output_dir": "__EXTERNAL_ROOT__/tmp/hidarc_task4"
 }
